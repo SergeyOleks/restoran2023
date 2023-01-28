@@ -1,0 +1,6 @@
+// Центрування флекса
+@mixin centeringFlexbox($disp: flex, $al-items: center, $just-cont: center){
+    display: $disp;
+    align-items: $al-items;
+    justify-content: $just-cont;
+}
