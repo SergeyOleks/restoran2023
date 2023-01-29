@@ -1,40 +1,46 @@
 .header {
     position: absolute;
     background-color: transparent;
+    
 }
 
 .header__nav {
     display: flex;
-    gap: 52px;
     align-items: center;
+    gap: 52px;
 }
 
-// .logo {}
 
 .header__box {
     display: flex;
     gap: 12px;
+    align-items: center;
 }
 .header__list {
     display: flex;
     gap: 20px;
-
     padding-left: 0;
-    margin: 0;
-    list-style: none;
+    padding-top: 0;
+    
+
 }
 
-// .header__item {}
 
 .header__link {
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 28px;
-    padding-bottom: 16px;
-    color: var(--color-akzent);
+    padding-bottom: 14px;
+    color: var(--color-accent);
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(20/16);
     letter-spacing: 0.02em;
+}
+
+.header__icon {
+    fill: var(--color-accent);
+
 }
