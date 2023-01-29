@@ -4,14 +4,13 @@
 @import './base/reset';
 @import './utils/variables/breakpoints';
 @import './layout/container';
-// @import './utils/fonts';
+@import './utils/fonts';
 @import './utils/variables/colors';
 
 // Homepage
 
 // Header section
 @import './reuse/logo';
-
 @import './components/header';
 @import './layout/modal-forms';
 
