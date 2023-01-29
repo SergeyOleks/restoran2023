@@ -7,6 +7,7 @@
 @import './utils/fonts';
 @import './utils/variables/colors';
 
+
 // Homepage
 
 // Header section
@@ -31,30 +32,6 @@
 
 // Footer section
 @import './components/footer';
-
-
-// Page Restaurant 
-
-
-// Restaurant-menu section
-@import './components/restaurant-section/restaurant-menu-section';
-
-
-// Page Hotel
-
-
-// Rooms section
-@import './components/hotel-section/room-section';
-
-
-
-// Page Room
-
-// Hero-main section
-@import './components/hero-room-section';
-
-// Amenities section
-@import './components/room-section/amenities-section';
 
 
 
