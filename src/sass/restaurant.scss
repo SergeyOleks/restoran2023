@@ -7,5 +7,27 @@
 @import './utils/fonts';
 @import './utils/variables/colors';
 
+// Header section
+@import './reuse/logo';
+@import './components/header';
+@import './layout/modal-forms';
+
+// Hero main section
+
+@import './components/hero-main-section';
+@import './reuse/buttons';
+@import './reuse/socials';
+
+// Feature section
+@import './components/templates-section/feature-section';
+
+// Service section
+@import './components/restaurant-section/restaurant-menu-section';
+
+// Footer section
+@import './components/footer';
+
+
+
 
 
