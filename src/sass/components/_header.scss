@@ -1,21 +1,18 @@
 .header {
     position: absolute;
     background-color: transparent;
+    left: 50%;
+    transform: translateX(-50%);
     
 }
 
 .header__nav {
     display: flex;
     align-items: center;
-    gap: 52px;
+    justify-content: space-between;
+    
 }
 
-
-.header__box {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-}
 .header__list {
     display: flex;
     gap: 20px;
@@ -25,12 +22,16 @@
 
 }
 
-
+.header__item {
+    display: flex;
+    gap: 6px;
+}
 .header__link {
     display: flex;
     align-items: center;
     padding-top: 28px;
     padding-bottom: 14px;
+
     color: var(--color-accent);
 
     font-family: 'Montserrat', sans-serif;
