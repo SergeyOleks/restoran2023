@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="/src/sass/components/hotel-section/_room-section.scss">
-
 <section class="hotel__section">
     <div>
         <p class="hotel__tagline">Amet minim mollit non</p>
@@ -10,12 +8,11 @@
         <p class="hotel__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
            mollit. Exercitation veniam consequat sunt nostrud amet.</p>
     </div>
-    <div class="hotel__img--main">
-        <!-- <img src="" alt=""> -->
-    </div>
-    <div class="hotel__img--secondary">
-        <!-- <img src="" alt=""> -->
-    </div>
+        <picture>
+            <source srcset="/src/images/reuse/double-room.jpg" type="image"/>
+            <source srcset="/src/images/reuse/double-room@2x.jpg" type="image"/>
+            <img class="hotel__img--main" src="/src/images/reuse/double-room.jpg" alt="Кімната з ліжком"/>
+        </picture>
     <div>
         <svg class="hotel__scroll--left" width="32px" height="32px">
             <use href="/src/images/icons.svg#icon-arrow-left"></use>
