@@ -1,0 +1,106 @@
+.button {
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #F3C653;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #FFFFFF;
+        border-color: #F3C653;
+    }
+}
+
+.hero-button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    
+    width: 236px;
+    
+    @media (min-width: 1024px) {
+        width: 236px;
+        
+    }
+
+    @media (min-width: 1280px) {
+        width: 258px;
+        
+    }
+}
+
+.section-button {
+    
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 236px;
+    background-color: #000000;
+}
+
+.button-modal {
+    display: block;
+    padding: 20px auto;
+    width: 100%;
+    min-height: 64px;
+    height: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.208;
+    color: #FFFFFF; 
+    background: #000000;
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: #F3C653;
+        border-color: #F3C653;
+        color: #000000;
+    }
+}
+
+.section-reservation {
+    padding: 18px 117px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.208;
+    color: #FFFFFF; 
+    background: #000000;
+    border: 1px solid #F3C653;
+    border-radius: 25px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: #F3C653;
+        border-color: #F3C653;
+        color: #000000;
+    }
+}
+
+.back-to-rooms {
+    letter-spacing: .02em;
+    color: #c79002;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25;
+    display: flex;
+}
+
+.icon-right {
+    fill: currentColor;
+    margin-left: 12px;
+}
