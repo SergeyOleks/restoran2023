@@ -1,0 +1,139 @@
+// Точки перелому
+// $mobile: 414px;
+// $tablet: 1024px;
+// $desktop: 1280px;
+:root {
+    --background-gradient: rgba(0, 0, 0, 0.65);
+    --color-white:#fff;
+    --color-servicetext: #BABABA;
+    --background-button:rgba(0, 0, 0, 0.4);
+    --color-button-text:#F3C653;
+    }
+    
+    @mixin centeringFlexbox($disp: flex, $al-items: center, $just-cont: center){
+        display: $disp;
+        align-items: $al-items;
+        justify-content: $just-cont;
+    }
+    
+    .servise-section{
+    
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+        @media screen and (max-width:$tablet) {
+            max-width: $mobile;
+            height: 735px;
+    
+            background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/background/background-restaurant.jpg);
+            @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                    background-image: linear-gradient(to right, var(--background-gradient), var(--background-gradient)), url(../images/background/background-restaurant@2x.jpg);
+            }
+        }   
+    
+        &__container{
+            @media screen and (max-width:$tablet) {
+                height: 735px;
+                padding: 24px 0 40px;
+    
+                @include centeringFlexbox();
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+    
+        &__features-container{
+            @media screen and (max-width:$tablet) {
+                margin-left: 140px;
+            }
+        }
+    
+        &__head{
+            display: block;
+            margin: 0;
+    
+            font-family: 'Film P3';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 1.075;
+            letter-spacing: 0.3em;
+            color: var(--color-white);
+        }
+    
+        &__business-type{
+            @media screen and (max-width:$tablet) {
+                margin: 12px 0 20px;
+            }
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            color: var(--color-white);
+        }
+    
+        &__text{
+            display: block;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.25;
+            letter-spacing: 0.02em;
+            color: var(--color-servicetext);
+    
+            @media screen and (max-width:$tablet) {
+                max-width: 259px;
+            }
+        }
+    
+        &__pictures-container{
+            position: relative;
+            @media screen and (max-width:$tablet) {
+                width: $mobile;      
+            }
+            display: flex;
+            gap: 20px;
+            justify-content: flex-end;
+        }
+        &__arrows-container{
+            position: absolute;
+            left:40px;
+            bottom: -46px;
+            @include centeringFlexbox();
+            gap: 32px;
+        }
+        &__arrow{
+            margin: 0;
+            padding: 0;
+            fill: var(--color-white);
+        }
+    
+        &__buttons-container{
+            @include centeringFlexbox();
+            flex-direction: column;
+            gap: 16px;
+        }
+    
+        &__button{
+            width: 236px;
+            height: 48px;
+    
+            border: 2px solid var(--color-white);
+            border-radius: 25px;
+            background-color: var(--background-button);
+    
+            color: var(--color-button-text);
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.02em;
+        }
+    }
