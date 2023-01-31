@@ -6,6 +6,14 @@
         width: $mobile;
     }
 
+    @media (min-width: $tablet) {
+        width: $tablet;
+    }
+
+    @media (min-width: $desktop) {
+        width: $desktop;
+    }
+
     // @media (min-width: 768px) {
     //     width: 768px;
     // }
