@@ -14,12 +14,13 @@
         width: $desktop;
     }
 
-    // @media (min-width: 768px) {
-    //     width: 768px;
-    // }
+    @media (min-width: $tablet) {
+        width: $tablet;
+        padding: 0 47px;
+    }
 
-    // @media (min-width: 1200px) {
-    //     width: 1200px;
-    // }
-
+    @media (min-width: $desktop) {
+        width: $desktop;
+        padding: 0 85px;
+    }
 }
