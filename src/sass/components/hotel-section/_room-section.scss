@@ -1,59 +1,80 @@
 .hotel__section {
-    max-width: 414px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
+    padding-top: 32px;
+    padding-bottom: 32px;
+       
+    &__tagline {
+        margin-bottom: 8px;
+        font-family: 'Times New Roman', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: calc(37/32);
+        color: var(--color-subtitle);
+    }
 
-.hotel__tagline {
-    color: #B4B4B4;
-}
+    &__logo {
+        margin-bottom: 32px;
+        font-family: 'Film P3', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: calc(69/64);
+        letter-spacing: 0.3em;
+        color: var(--color-brand);
+    }
 
-.hotel__tagline--reverse {
-    color: cyan;
-    text-align: end;
-}
+    &__title { 
+        margin-bottom: 12px;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(41/36);
+        letter-spacing: 0.05em;
+        color: var(--color-tertiary);
+    }
 
-.hotel__logo {
+    &__descr {
+        margin-bottom: 32px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(20/16);
+        letter-spacing: 0.02em;
+        color: var(--color-primary);
+    }
+ 
+    &__image {
+        margin-bottom: 32px;
+        
+    }
 
-}
+    &__slider-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 72px;
+    }
 
-.hotel__logo--reverse {
-    display: block;
-    color: cyan;
-    text-align: end;
-}
+    &__buttons-container{
+        @include centeringFlexbox();
+        flex-direction: column;
+        gap: 16px;
+    }
 
-.hotel__title { 
-
-}
-
-.hotel__title--reverse {
-    color: cyan;
-    text-align: end;
-}
-
-.hotel__text {
-
-}
-
-.hotel__text--reverse {
-    color: cyan;
-}
-
-.hotel__img--main {
-    height: 322px;
-    background-color: red;
-}
-
-.hotel__img--secondary {
-    height: 194px;
-    background-color: green;
-}
-
-.hotel__scroll--left {
-    margin-right: 33px;
-}
-
-.hotel__buttom {
-
+    &__button{
+        max-width: 236px;
+        height: 48px;
+        border: 2px solid var(--color-tertiary);
+        border-radius: 25px;
+        background-color: var(--color-tertiary);
+        color: var(--color-accent);
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(20/16);
+        letter-spacing: 0.02em;
+    }
 }
