@@ -24,8 +24,11 @@
 // Feature section
 @import './components/templates-section/feature-section';
 
-// Service section
-@import './components/templates-section/service-section';
+// Service restaurant section
+@import './components/templates-section/servise-restaurant-section.scss';
+
+// Service hotel section
+@import './components/templates-section/servise-hotel-section.scss';
 
 // Contacts section
 @import './components/home-section/contacts-section';
