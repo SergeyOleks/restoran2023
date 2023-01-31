@@ -1,0 +1,207 @@
+.hero-container {
+  position: relative;
+  @media (max-width: 1023px) {
+    max-width: 414px;
+    min-height: 740px;
+    padding-top: 64px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 1024px;
+    height: 720px;
+    padding-top: 188px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1280px;
+    height: 720px;
+    padding-top: 164px;
+    padding-bottom: 64px;
+  }
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/hero/hero-homepage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/hero-homepage@2x.jpg);
+  }
+
+  @media (min-width: $tablet) {
+  }
+
+  @media (min-width: $desktop) {
+  }
+
+  &__address {
+    position: absolute;
+
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin-bottom: 70px;
+    margin-right: 0;
+    margin-left: auto;
+    padding: 8px 7px 9px 34px;
+
+    max-width: 210px;
+    height: 47px;
+
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+
+    @media (min-width: $tablet) {
+      position: absolute;
+      left: 47px;
+      top: 600px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop) {
+      left: 85px;
+    }
+  }
+
+  &__address-link {
+    display: flex;
+
+    gap: 8px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+
+    color: var(--color-address-header);
+  }
+
+  &__icon {
+    position: absolute;
+    top: 14px;
+    left: 6px;
+    fill: var(--color-accent);
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    text-align: center;
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1.073;
+    letter-spacing: 0.3em;
+
+    color: var(--color-secondary);
+
+    @media (min-width: $tablet) {
+      font-size: 128px;
+      line-height: 1.078;
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    color: var(--color-secondary);
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 1.2;
+      margin-bottom: 56px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__moto {
+    margin-top: 0;
+    margin-bottom: 113px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.156;
+    letter-spacing: 0.05em;
+
+    color: var(--color-secondary);
+
+    @media (min-width: $tablet) {
+      font-size: 36px;
+      line-height: 1.139;
+      margin-bottom: 144px;
+    }
+  }
+}
+
+.hero-buttons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 58px;
+  padding-left: 0;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    right: 47px;
+    bottom: 64px;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    right: 85px;
+    gap: 60px;
+  }
+}
+
+.hero-socials {
+  position: absolute;
+  left: 16px;
+  bottom: 21px;
+
+  display: flex;
+  gap: 20px;
+
+  &__icon {
+    fill: var(--color-accent);
+  }
+
+  @media (min-width: $tablet) {
+    left: 48px;
+    bottom: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
