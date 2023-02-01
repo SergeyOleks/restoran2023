@@ -1,0 +1,82 @@
+.slider-section {
+    position: relative;
+
+    
+
+    .swiper {
+        padding-left: 85px;
+        padding-bottom: 60px;
+
+        @media (max-width: $tablet) {
+            max-width: 415px;
+        }
+    }
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: ease-in-out 0.5s;
+
+        &.swiper-slide-active {
+            max-width: 245px;
+        }
+
+        &.swiper-slide-next {
+            // краще виставляти у %
+            // зараз 17.3%  дорівнює 200px
+            //width: 200px !important;
+            @media (max-width: 1023px) {
+            max-width: 17.3%;
+            min-height: 245px !important;
+            opacity: 0.6;
+            }
+        }
+       
+    }
+}
+.swiper-image {
+    min-height: 245px;
+    object-fit: cover;
+}
+.swiper-btns {
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.swiper-btn-next, .swiper-btn-prev {
+        // bottom: -50px;
+        
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 50px;
+        height: 40px;
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: 900;
+        font-size: 39px;
+        line-height: 1;
+        border: none;
+        color: var(--color-tertiary);
+        background-color: transparent;
+}
+
+// .swiper-btn-next {
+//     left: 250px;
+// }
+
+// .swiper-btn-prev {
+//     left: 170px;
+// }
+.swiper-button-disabled {
+opacity: 0.6;
+}
