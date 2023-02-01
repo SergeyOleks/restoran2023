@@ -1,0 +1,279 @@
+.contact {
+    min-width: $mobile;
+    padding-top: 36px;
+    padding-bottom: 32px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--bg-primary);
+    
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 56px;
+        padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 73px;
+    }
+
+    &__container {
+        
+        @media screen and (min-width: $tablet) {           
+            display: flex;
+            justify-content: space-between;
+            align-items: center;                  
+        }
+        
+    }
+
+
+    &__title {
+        font-family: url(/src/fonts/FilmP3Bold.woff);        
+        margin-top: 0;
+        margin-bottom: 12px;      
+        font-size: 40px;
+        line-height: 1.075;
+        letter-spacing: 0.3em;
+        color: var(--color-brand);
+
+        @media screen and (min-width: $tablet) {
+            font-size: 64px;
+            line-height: 1.078;
+            margin-bottom: 8px;
+        }
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 16px;          
+        }
+
+    }
+
+    &__text {
+        font-family: url(/src/fonts/montserrat-v25-latin-600.woff), url(/src/fonts/montserrat-v25-latin-600.woff2);
+        font-size: 16px;
+        line-height: 1.25;
+        margin-top: 0;
+        margin-bottom: 16px;
+        letter-spacing: 0.02em;
+        color: var(--color-primary);
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 52px;
+        }
+        @media screen and (min-width: $desktop) {
+            font-size: 20px;
+            line-height: 1.2;
+            margin-bottom: 40px;          
+        }
+
+    }
+
+    &__list {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 32px;
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 0;          
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        &:first-child {
+            column-gap: 22px;
+
+            @media screen and (min-width: $tablet) {
+                margin-bottom: 24px;
+            }
+        }
+        &:nth-child(2) {
+            justify-content: space-between;
+
+            @media screen and (min-width: $tablet) {
+                margin-bottom: 48px;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+            @media screen and (min-width: $tablet) {
+                
+                width: 285px;
+                height: 56px;
+            }
+        }
+
+        &:last-child > p {
+            display: none;
+
+        }
+
+        @media screen and (min-width: $tablet) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+    }
+
+    &__label {
+        font-family: url(/src/fonts/montserrat-v25-latin-500.woff), url(/src/fonts/montserrat-v25-latin-500.woff2);
+        font-size: 20px;
+        line-height: 1.2;
+        margin-top: 0;
+        margin-bottom: 0;
+        letter-spacing: 0.02em;
+        color: var(--color-accent-secondary);
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__list-phone-f {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        column-gap: 12px;
+        
+    }
+
+    &__list-phone-f > li:last-child {
+        display: none;
+        
+    }
+
+    &__list-phone {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        column-gap: 12px;
+        
+    }
+
+    &__box {
+        display: flex;       
+        justify-content: space-around;
+        align-items: center;
+        width: 260px;
+        height: 40px;
+        background-color: #FFFFFF;
+        border: 0.5px solid #F3C653;
+        border-radius: 2px;
+        padding-left: 8px;
+        padding-right: 8px;
+
+        @media screen and (min-width: $tablet) {
+           width: 264px; 
+        }
+    }
+
+    &__box-s {
+        width: 144px;        
+    }
+
+    &__phone {
+
+        font-family: url(/src/fonts/montserrat-v25-latin-regular.woff), url(/src/fonts/montserrat-v25-latin-regular.woff2);
+        font-size: 14px;
+        line-height: 1.214;
+        letter-spacing: 0.02em;
+        color: var(--color-brand);
+        text-decoration: none;
+    }
+
+    &__icon-c {
+        fill: var(--color-accent-secondary);
+        
+    } 
+
+    &__address {
+        width: 260px;
+        height: 76px;
+        margin-left: auto;
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        background-color: var(--color-secondary);
+        border: 0.5px solid var(--color-accent);
+        border-radius: 2px;
+        padding-left: 10px;
+
+        @media screen and (min-width: $tablet) {
+            width: 285px;
+            height: 56px;
+            margin-left: 0;
+
+        }
+    }
+
+    &__address-text {
+        display: flex;
+        flex-direction: column;
+        font-family: url(/src/fonts/montserrat-v25-latin-regular.woff), url(/src/fonts/montserrat-v25-latin-regular.woff2);
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.01em;
+        color: var(--color-brand);
+        text-decoration: none;
+    }
+
+    &__address-dep {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: $tablet) {
+            flex-direction: row;
+            column-gap: 6px;
+        }
+    }
+    
+
+    &__img {
+        width: 384px;
+        height: 220px;
+        background-color: var(--bg-primary);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border: 1px solid var(--color-servicetext);
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        background-image: url(/src/images/location/location.jpg);
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+                
+            background-image: url(/src/images/location/location@2x.jpg);
+        }
+        
+        
+        @media screen and (min-width: $tablet) {
+            width: 535px;
+            height: 412px;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-color: var(--bg-primary);
+            border: 1px solid var(--color-servicetext);
+            box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+            border-radius: 2px;
+            background-image: url(/src/images/location/location-tab.jpg);
+
+            @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+                background-image: url(/src/images/location/location-tab@2x.jpg);
+            }
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 634px;
+            height: 412px;
+            background-image: url(/src/images/location/location-desk.jpg);
+
+            @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+                background-image: url(/src/images/location/location-desk@2x.jpg);
+            }          
+        }
+    }
+}
