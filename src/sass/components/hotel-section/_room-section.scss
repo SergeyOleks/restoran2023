@@ -1,59 +1,82 @@
-.hotel__section {
-    max-width: 414px;
-    padding: 0 15px;
-    margin: 0 auto;
+// Точки перелому
+//$mobile: 414px;
+//$tablet: 1024px;
+//$desktop: 1280px;
+.section-room {
+  padding: 32px 0;
 }
-
-.hotel__tagline {
-    color: #B4B4B4;
+.lux {
+  background-color: var(--bg-primary);
 }
-
-.hotel__tagline--reverse {
-    color: cyan;
-    text-align: end;
+.lux__container {
+  width: 100%;
 }
-
-.hotel__logo {
-
+.duo {
+  background-color: var(--bg-primary);
 }
-
-.hotel__logo--reverse {
-    display: block;
-    color: cyan;
-    text-align: end;
+.triple {
+  background-color: var(--bg-secondary);
 }
+.room-subtitle {
+  font-family: 'Times New Roman';
 
-.hotel__title { 
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
 
+  color: var(--color-subtitle);
+
+  margin-bottom: 8px;
 }
+.logo-room {
+  font-family: 'Film P3', sans-serif;
 
-.hotel__title--reverse {
-    color: cyan;
-    text-align: end;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+
+  color: var(--color-brand);
 }
+.room-title {
+  font-family: 'Times New Roman';
 
-.hotel__text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
 
+  letter-spacing: 0.05em;
+  color: var(--color-tertiary);
+
+  margin-bottom: 12px;
+  margin-top: 32px;
 }
+.room-content {
+  font-family: 'Montserrat';
 
-.hotel__text--reverse {
-    color: cyan;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+
+  color: var(--color-primary);
+
+  margin-bottom: 32px;
+  width: 258px;
 }
+.slider-room {
+  display: flex;
+  gap: 16px;
 
-.hotel__img--main {
-    height: 322px;
-    background-color: red;
+  margin-bottom: 20px;
 }
-
-.hotel__img--secondary {
-    height: 194px;
-    background-color: green;
+.slider__washbasin {
+  width: 194px;
 }
-
-.hotel__scroll--left {
-    margin-right: 33px;
+.slider__window {
+  width: 194px;
 }
-
-.hotel__buttom {
-
+.room-photo {
+  width: 244px;
+  margin-bottom: 32px;
 }
