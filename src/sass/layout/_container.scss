@@ -2,13 +2,15 @@
   padding: 0 15px;
   margin: 0 auto;
 
-  @media (min-width: $tablet) {
-    width: $tablet;
-    padding: 0 47px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
   }
 
-  @media (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
     width: $desktop;
-    padding: 0 85px;
   }
 }
