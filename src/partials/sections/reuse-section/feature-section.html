@@ -1,11 +1,26 @@
 <section class="feature">
     <div class="container">
-        <p class="feature__text">Amet minim mollit non</p>
-        <h2 class="feature__title">Міміно</h2>
-        <p feature__text-description>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        <picture>
-            <source srcset="/src/images/feature/restaurant-interior.jpg 1x, /src/images/feature/restaurant-interior@2x.jpg 2x" type="image" />
-            <img src="/src/images/feature/restaurant-interior.jpg" alt="Інтер'єр ресторану 1" />
-          </picture>
+        <div class="feature__flex-container">
+            <div class="flex-text">
+            <p class="feature__text">Amet minim mollit non</p>
+            <h2 class="feature__title">Міміно</h2>
+            <p class="feature__text-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+            <picture class="feature__img-restaurant">
+                <source srcset="/src/images/feature/restaurant-interior.jpg 1x, /src/images/feature/restaurant-interior@2x.jpg 2x" type="image" />
+                <img src="/src/images/feature/restaurant-interior.jpg" alt="Інтер'єр ресторану 1" />
+            </picture>
+        </div>
+        <div class="feature--flex">
+            <picture class="feature__hall">
+                <source srcset="/src/images/feature/restaurant-hall.jpg 1x, /src/images/feature/restaurant-hall@2x.jpg 2x" type="image" />
+                <img class="feature__img-hall" src="/src/images/feature/restaurant-hall.jpg" alt="Інтер'єр холу" width="200" height="278" />
+            </picture>
+            <p class="feature__text-hall">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+        <picture class="feature__img-slide">
+            <source srcset="/src/images/feature/feature-section1.jpg 1x, /src/images/feature/feature-section1@2x.jpg 2x" type="image" />
+            <img src="/src/images/feature/feature-section1.jpg" alt="Клієнт тримає бокал вина" />
+        </picture>
     </div>
 </section>
