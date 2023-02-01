@@ -1,10 +1,17 @@
+// Точки перелому
+// $mobile: 414px;
+// $tablet: 1024px;
+// $desktop: 1280px;
 .restaurant-menu {
   background: var(--bg-secondary);
   padding: 32px 0;
 
   @media screen and (min-width: $tablet) {
     height: 889px;
-    padding: 58px 0 40px 0;
+    padding: 58px 0 0 0;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 931px;
   }
 
   &__title {
@@ -54,8 +61,12 @@
       display: block;
       flex-wrap: wrap;
       flex-direction: column;
-      columns: 430px 2;
+      columns: 374px 2;
       column-gap: 87px;
+    }
+    @media screen and (min-width: $desktop) {
+      columns: 485px 2;
+      column-gap: 140px;
     }
   }
 }
@@ -87,6 +98,10 @@ table td {
     @media screen and (min-width: $tablet) {
       margin-bottom: 20px;
     }
+    @media screen and (min-width: $desktop) {
+      font-size: 24px;
+      line-height: calc(28 / 24);
+    }
   }
   &__food {
     font-family: 'Montserrat', sans-serif;
@@ -102,6 +117,11 @@ table td {
     font-weight: 500;
     font-size: 14px;
     line-height: calc(17 / 14);
+
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: calc(20 / 16);
+    }
   }
   &__weight {
     font-family: 'Montserrat', sans-serif;
@@ -123,5 +143,11 @@ table td {
 
     text-align: right;
     width: 60px;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      line-height: calc(20 / 16);
+      width: 70px;
+    }
   }
 }
