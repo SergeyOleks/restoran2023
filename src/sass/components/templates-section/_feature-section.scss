@@ -32,28 +32,28 @@
         line-height: 1.25;
         letter-spacing: 0.02em;
         color: var(--color-primary);
-        margin-bottom: 28px;
+        max-width: 258px;
     }
-
-    &__img-restaurant {
-        position: absolute;
-        right: 15px;
-        }
 
     &--flex {
         display: flex;
+        align-items: center;
 
-        margin-top: 350px;
+        margin-top: 32px;
         margin-bottom: 32px;
     }
 
-    &__img-hall {
-        
+    &__img-restaurant {
+        transform: translateX(57%);
     }
 
-    &__img-slide {
-        position: absolute;
-        left: 84px;
+    &__hall {
+        margin-right: 20px;
+    }
+
+    &__img-hall {
+        width: 200px;
+        height: 278px;
     }
 
     &__text-hall {
@@ -63,9 +63,15 @@
         line-height: 1.25;
         letter-spacing: 0.02em;
         color: var(--color-accent-secondary);
-        }
+        width: 163px;
+    }
+
+    &__flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
-.container--position {
-    position: relative;
+.flex-text {
+    margin-bottom: 28px;
 }
