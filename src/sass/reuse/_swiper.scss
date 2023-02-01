@@ -1,15 +1,23 @@
 .slider-section {
     position: relative;
 
-    
-
     .swiper {
-        padding-left: 85px;
-        padding-bottom: 60px;
+        margin: 0;
+        padding-bottom: 52px;
+        max-width: 415px;
+        @media (max-width: 1023px) {
+        
+                padding-left: 85px;
+            }
+        @media (min-width: $tablet) {
+                max-width: 428px;
+                padding-bottom: 64px;
+            }
+            @media (min-width: $desktop) {
+                max-width: 548px;
+            }
 
-        @media (max-width: $tablet) {
-            max-width: 415px;
-        }
+        
     }
     .swiper-slide {
         display: flex;
@@ -19,6 +27,12 @@
 
         &.swiper-slide-active {
             max-width: 245px;
+            @media (min-width: $tablet) {
+                width: 194px !important;
+            }
+             @media (min-width: $desktop) {
+                width: 254px !important;
+            }
         }
 
         &.swiper-slide-next {
@@ -30,6 +44,13 @@
             min-height: 245px !important;
             opacity: 0.6;
             }
+            @media (min-width: $tablet) {
+                width: 194px !important;
+            }
+            @media (min-width: $desktop) {
+                width: 254px !important;
+            }
+            
         }
        
     }
@@ -37,17 +58,27 @@
 .swiper-image {
     min-height: 245px;
     object-fit: cover;
+    @media (min-width: $tablet) {
+        min-height: 194px;
+    }
+     @media (min-width: $desktop) {
+        min-height: 254px !important;
+    }
+    
 }
 .swiper-btns {
     position: absolute;
-    bottom: 0px;
-    right: 15px;
+    bottom: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     background-color: transparent;
     border: none;
+    @media (max-width: 1023px) {
+        right: 17px;
+    }
 }
 
 .swiper-btn-next, .swiper-btn-prev {
@@ -70,13 +101,6 @@
         background-color: transparent;
 }
 
-// .swiper-btn-next {
-//     left: 250px;
-// }
-
-// .swiper-btn-prev {
-//     left: 170px;
-// }
 .swiper-button-disabled {
 opacity: 0.6;
 }
