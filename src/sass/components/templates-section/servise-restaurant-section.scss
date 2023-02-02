@@ -39,6 +39,18 @@
                     background-image: linear-gradient(to right, var(--bg-section), var(--bg-section)), url(../images/background/background-restaurant-tablet@2x.jpg);
             }
         }   
+
+        @media screen and (min-width:$desktop) {
+            max-width: $desktop;
+            height: 620px;
+    
+            background-image: linear-gradient(to right, var(--bg-section), var(--bg-section)), url(../images/background/background-restaurant-desktop.jpg);
+            @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                    background-image: linear-gradient(to right, var(--bg-section), var(--bg-section)), url(../images/background/background-restaurant-desktop@2x.jpg);
+            }
+        }  
     
         &__container{
             @media screen and (min-width:0) {
@@ -58,6 +70,10 @@
                 @include centeringFlexbox();
                 flex-direction: column;
                 justify-content: space-between;
+            }
+
+            @media screen and (min-width:$tablet) {
+                padding: 48 px 52px 96px;
             }
         }
     
@@ -143,11 +159,17 @@
 
             @media screen and (min-width:$tablet) {
                 width: $tablet;
+                padding: 0 52px 0 85px;
                 flex-direction: row-reverse;
                 justify-content: space-around;
                 align-items: flex-end;
                 gap: 29px;
             }
+
+            @media screen and (min-width:$desktop) {
+                width: $desktop;
+                gap: 32px;      
+             }
         }
     
         &__pictures-container{
@@ -160,9 +182,18 @@
                 // width: $tablet;      
             }
 
+            @media screen and (min-width:$desktop) {
+                width: $desktop;      
+            }
+
             display: flex;
             gap: 20px;
             justify-content: flex-end;
+
+            @media screen and (min-width:$desktop) {
+            
+                gap: 86px;      
+             }
         }
 
         &__dish-2{

@@ -40,6 +40,18 @@
         }
     }  
 
+    @media screen and (min-width:$desktop) {
+        max-width: $desktop;
+        height: 620px;
+
+        background-image: linear-gradient(to right, var(--bg-section), var(--bg-section)), url(../images/background/background-hotel-desktop.jpg);
+        @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, var(--bg-section), var(--bg-section)), url(../images/background/background-hotel-desktop@2x.jpg);
+        }
+    } 
+
     &__container{
         @media screen and (min-width:0) {
             height: 735px;
@@ -147,10 +159,16 @@
 
         @media screen and (min-width:$tablet) {
             width: $tablet;
+            padding: 0 47px;
             flex-direction: row;
             justify-content: space-around;
             align-items: flex-end;
             gap: 32px;
+        }
+
+        @media screen and (min-width:$desktop) {
+            width: $desktop;
+            padding: 0 52px 0 85px;
         }
     }
 
@@ -162,6 +180,11 @@
         display: flex;
         gap: 20px;
         justify-content: flex-start;
+
+        @media screen and (min-width:$desktop) {
+            flex-direction: row-reverse;
+            gap: 86px;      
+         }
     }
 
     &__pict3{

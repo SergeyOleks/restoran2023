@@ -16,10 +16,25 @@
                     <picture>
                         <source srcset="./images/servise/servise-restaurant-dish-1-mobile.jpg, 
                                         ./images/servise/servise-restaurant-dish-1-mobile@2x.jpg 2x"                                
-
+                                        media="(max-width:1023px)"
                         />
+
+                        <source
+                                srcset="images/servise/servise-restaurant-dish-1-tablet.jpg 1x,
+                                        images/servise/servise-restaurant-dish-1-tablet@2x.jpg 2x"
+                                media="(max-width:1279px)"
+                                sizes="(min-width:270px)"
+                        />
+
+                        <source
+                        srcset="images/servise/servise-restaurant-dish-1-tablet.jpg 1x,
+                                images/servise/servise-restaurant-dish-1-tablet@2x.jpg 2x"
+                        media="(min-width:1280px)"
+                        sizes="(min-width:270px)"
+                />
                         <img
-                            src="./images/servise/servise-restaurant-dish-1-mobile.jpg"                         
+                            src="./images/servise/servise-restaurant-dish-1-mobile.jpg" 
+                            sizes="(min-width:270px)"                        
                             alt="блюдо 1"                            
                         />
                     </picture>
@@ -59,8 +74,8 @@
                             type="image/jpeg"
                         />
                         <source
-                        srcset="images/servise/servise-restaurant-dish-3-tablet.jpg 1x,
-                                images/servise/servise-restaurant-dish-3-tablet@2x.jpg 2x"
+                        srcset="images/servise/servise-restaurant-dish-3-desktop.jpg 1x,
+                                images/servise/servise-restaurant-dish-3-desktop@2x.jpg 2x"
                             media="(min-width:1280px)"
                             type="image/jpeg"
                         />
