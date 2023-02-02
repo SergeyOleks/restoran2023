@@ -28,11 +28,9 @@
 
   margin-bottom: 8px;
 }
-
 .room-subtitle__reverse {
   text-align: end;
 }
-
 .logo-room {
   font-family: 'Film P3', sans-serif;
 
@@ -43,12 +41,10 @@
 
   color: var(--color-brand);
 }
-
 .logo-room__reverse {
   display: block;
   text-align: end;
 }
-
 .room-title {
   font-family: 'Times New Roman';
 
@@ -62,11 +58,9 @@
   margin-bottom: 12px;
   margin-top: 32px;
 }
-
 .room-title__reverse {
   text-align: end;
 }
-
 .room-content {
   font-family: 'Montserrat';
 
@@ -79,12 +73,10 @@
 
   margin-bottom: 32px;
 }
-
 .room-content__container {
   width: 258px;
   margin-left: 83px;
 }
-
 .slider-room {
   display: flex;
   gap: 16px;
@@ -97,7 +89,22 @@
 .slider__window {
   width: 194px;
 }
+.slider__way {
+  display: flex;
+  gap: 34px;
+}
 .room-photo {
   width: 244px;
   margin-bottom: 32px;
+}
+.room-photo__container {
+  display: flex;
+  justify-content: end;
+}
+.room--button__container {
+  margin-left: 80px;
+
+    a:first-child {
+        margin-bottom: 16px;
+      }
 }
