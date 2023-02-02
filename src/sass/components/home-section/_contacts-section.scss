@@ -23,8 +23,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;                  
-        }
-        
+        }      
     }
 
 
@@ -43,14 +42,13 @@
             line-height: 1.078;
             margin-bottom: 8px;
         }
+
         @media screen and (min-width: $desktop) {
             margin-bottom: 16px;          
         }
-
     }
 
     &__text {
-        font-family: 'Montserrat', 'Helvetica Neue', 'Roboto', 'Verdana', 'Tahoma', sans-serif;
         font-weight: 600;
         font-size: 16px;
         line-height: 1.25;
@@ -67,7 +65,6 @@
             line-height: 1.2;
             margin-bottom: 40px;          
         }
-
     }
 
     &__list {
@@ -85,7 +82,7 @@
         align-items: center;
         margin-bottom: 16px;
         &:first-child {
-            column-gap: 28px;
+            column-gap: 34px;
 
             @media screen and (min-width: $tablet) {
                 margin-bottom: 24px;
@@ -100,8 +97,7 @@
         }
         &:last-child {
             margin-bottom: 0;
-            @media screen and (min-width: $tablet) {
-                
+            @media screen and (min-width: $tablet) {               
                 width: 285px;
                 height: 56px;
             }
@@ -109,18 +105,15 @@
 
         &:last-child > p {
             display: none;
-
         }
 
         @media screen and (min-width: $tablet) {
             flex-direction: column;
             align-items: flex-start;
         }
-
     }
 
     &__label {
-        font-family: 'Montserrat', 'Helvetica Neue', 'Roboto', 'Verdana', 'Tahoma', sans-serif;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -138,21 +131,18 @@
         list-style: none;
         padding-left: 0;
         display: flex;
-        column-gap: 12px;
-        
+        column-gap: 12px;       
     }
 
     &__list-phone-f > li:last-child {
-        display: none;
-        
+        display: none;        
     }
 
     &__list-phone {
         list-style: none;
         padding-left: 0;
         display: flex;
-        column-gap: 12px;
-        
+        column-gap: 12px;       
     }
 
     &__box {
@@ -177,8 +167,6 @@
     }
 
     &__phone {
-
-        font-family: 'Montserrat', 'Helvetica Neue', 'Roboto', 'Verdana', 'Tahoma', sans-serif;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.214;
@@ -188,8 +176,7 @@
     }
 
     &__icon-c {
-        fill: var(--color-accent-secondary);
-        
+        fill: var(--color-accent-secondary);       
     } 
 
     &__address {
@@ -209,12 +196,10 @@
             width: 285px;
             height: 56px;
             margin-left: 0;
-
         }
     }
 
     &__address-text {
-        font-family: 'Montserrat', 'Helvetica Neue', 'Roboto', 'Verdana', 'Tahoma', sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
@@ -223,8 +208,7 @@
         text-decoration: none;
         color: var(--color-brand);
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;        
     }
 
     &__address-dep {
