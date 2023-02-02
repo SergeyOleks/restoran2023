@@ -1,68 +1,161 @@
 <section class="feature">
   <div class="container">
-    <p class="feature__text">Amet minim mollit non</p>
-    <h2 class="feature__title">Міміно</h2>
-    <p feature__text-description>
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit. Exercitation veniam
-      consequat sunt nostrud amet.
-    </p>
-    <picture>
-      <source
-        srcset="
-          /src/images/feature/chief.jpg    1x,
-          /src/images/feature/chief@2x.jpg 2x
-        "
-        type="image"
-      />
-      <img src="/src/images/feature/chief.jpg" alt="Кухня ресторану" />
-    </picture>
-    <picture>
-      <source
-        srcset="
-          /src/images/feature/meat.jpg    1x,
-          /src/images/feature/meat@2x.jpg 2x
-        "
-        type="image"
-      />
-      <img src="/src/images/feature/meat.jpg" alt="Свіже м'ясо" />
-    </picture>
-    <p>
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit. Exercitation veniam
-      consequat sunt nostrud amet.
-    </p>
-    <ul>
-      <li>
-        <picture>
-          <source
-            srcset="
-              /src/images/feature/restaurant-flour.jpg    1x,
-              /src/images/feature/restaurant-flour@2x.jpg 2x
-            "
-            type="image"
-          />
-          <img
-            src="/src/images/feature/restaurant-flour.jpg"
-            alt="Кухар працює з тістом"
-          />
-        </picture>
-      </li>
-      <li>
-        <picture>
-          <source
-            srcset="
-              /src/images/feature/restaurant-meal.jpg    1x,
-              /src/images/feature/restaurant-meal@2x.jpg 2x
-            "
-            type="image"
-          />
-          <img
-            src="/src/images/feature/restaurant-meal.jpg"
-            alt="Вишукана трапеза у ресторані"
-          />
-        </picture>
-      </li>
-    </ul>
+    <div class="feature__flex-container">
+      <div class="flex-text">
+        <p class="feature__text">Amet minim mollit non</p>
+        <h2 class="feature__title" lang="en">Mimiho</h2>
+        <p class="feature__text-description">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+      <picture class="feature__img-restaurant">
+        <source
+          srcset="
+            /src/images/feature/chief.jpg    1x,
+            /src/images/feature/chief@2x.jpg 2x
+          "
+          type="image"
+        />
+        <img src="/src/images/feature/chief.jpg" alt="Кухня ресторану" />
+      </picture>
+    </div>
+    <div class="feature--flex">
+      <picture class="feature__hall">
+        <source
+          srcset="
+            /src/images/feature/meat.jpg    1x,
+            /src/images/feature/meat@2x.jpg 2x
+          "
+          type="image"
+        />
+        <img src="/src/images/feature/meat.jpg" alt="Свіже м'ясо" />
+      </picture>
+      <p class="feature__text-hall">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+    <div class="slider-section" data-slider="team-slider">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  /src/images/slider-restaurant/flour-mobile.jpg    1x,
+                  /src/images/slider-restaurant/flour-mobile@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width: 1023px)"
+              />
+              <source
+                srcset="
+                  /src/images/slider-restaurant/flour-tablet.jpg    1x,
+                  /src/images/slider-restaurant/flour-tablet@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width: 1279px)"
+              />
+              <source
+                srcset="
+                  /src/images/slider-restaurant/flour-desktop.jpg    1x,
+                  /src/images/slider-restaurant/flour-desktop@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <img
+                class="swiper-image"
+                src="/src/images/slider-restaurant/flour-mobile.jpg"
+                alt="Келих вина"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  /src/images/slider-restaurant/khinkali-mobile.jpg    1x,
+                  /src/images/slider-restaurant/khinkali-mobile@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width: 1023px)"
+              />
+              <source
+                srcset="
+                  /src/images/slider-restaurant/khinkali-tablet.jpg    1x,
+                  /src/images/slider-restaurant/khinkali-tablet@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width: 1279px)"
+              />
+              <source
+                srcset="
+                  /src/images/slider-restaurant/khinkali-desktop.jpg    1x,
+                  /src/images/slider-restaurant/khinkali-desktop@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <img
+                class="swiper-image"
+                src="/src/images/slider-restaurant/khinkali-mobile.jpg"
+                alt=""
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  /src/images/slider-restaurant/meal-mobile.jpg    1x,
+                  /src/images/slider-restaurant/meal-mobile@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width: 1023px)"
+              />
+              <source
+                srcset="
+                  /src/images/slider-restaurant/meal-tablet.jpg    1x,
+                  /src/images/slider-restaurant/meal-tablet@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width: 1279px)"
+              />
+              <source
+                srcset="
+                  /src/images/slider-restaurant/meal-desktop.jpg    1x,
+                  /src/images/slider-restaurant/meal-desktop@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <img
+                class="swiper-image"
+                src="/src/images/slider-restaurant/meal-mobile.jpg"
+                alt=""
+              />
+            </picture>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-btns">
+          <button type="button" class="swiper-btn swiper-btn-prev">
+            <svg width="32" height="32">
+              <use href="/src/images/icons.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <button type="button" class="swiper-btn swiper-btn-next">
+            <svg width="32" height="32">
+              <use href="/src/images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

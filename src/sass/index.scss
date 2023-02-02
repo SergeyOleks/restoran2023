@@ -6,6 +6,7 @@
 @import './layout/container';
 @import './utils/fonts';
 @import './utils/variables/colors';
+@import './utils/mixins';
 
 
 // Homepage
@@ -23,6 +24,7 @@
 
 // Feature section
 @import './components/templates-section/feature-section';
+@import './reuse/swiper';
 
 // Service restaurant section
 @import './components/templates-section/servise-restaurant-section.scss';

@@ -1,26 +1,171 @@
 <section class="feature">
-    <div class="container">
-        <div class="feature__flex-container">
-            <div class="flex-text">
-            <p class="feature__text">Amet minim mollit non</p>
-            <h2 class="feature__title">Міміно</h2>
-            <p class="feature__text-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
-            <picture class="feature__img-restaurant">
-                <source srcset="/src/images/feature/restaurant-interior.jpg 1x, /src/images/feature/restaurant-interior@2x.jpg 2x" type="image" />
-                <img src="/src/images/feature/restaurant-interior.jpg" alt="Інтер'єр ресторану 1" />
-            </picture>
-        </div>
-        <div class="feature--flex">
-            <picture class="feature__hall">
-                <source srcset="/src/images/feature/restaurant-hall.jpg 1x, /src/images/feature/restaurant-hall@2x.jpg 2x" type="image" />
-                <img class="feature__img-hall" src="/src/images/feature/restaurant-hall.jpg" alt="Інтер'єр холу" width="200" height="278" />
-            </picture>
-            <p class="feature__text-hall">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        </div>
-        <picture class="feature__img-slide">
-            <source srcset="/src/images/feature/feature-section1.jpg 1x, /src/images/feature/feature-section1@2x.jpg 2x" type="image" />
-            <img src="/src/images/feature/feature-section1.jpg" alt="Клієнт тримає бокал вина" />
-        </picture>
+  <div class="container">
+    <div class="feature__flex-container">
+      <div class="flex-text">
+        <p class="feature__text">Amet minim mollit non</p>
+        <h2 class="feature__title" lang="en">Mimiho</h2>
+        <p class="feature__text-description">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+      <picture class="feature__img-restaurant">
+        <source
+          srcset="
+            /src/images/feature/restaurant-interior.jpg    1x,
+            /src/images/feature/restaurant-interior@2x.jpg 2x
+          "
+          type="image"
+        />
+        <img
+          src="/src/images/feature/restaurant-interior.jpg"
+          alt="Інтер'єр ресторану 1"
+        />
+      </picture>
     </div>
+    <div class="feature--flex">
+      <picture class="feature__hall">
+        <source
+          srcset="
+            /src/images/feature/restaurant-hall.jpg    1x,
+            /src/images/feature/restaurant-hall@2x.jpg 2x
+          "
+          type="image"
+        />
+        <img
+          class="feature__img-hall"
+          src="/src/images/feature/restaurant-hall.jpg"
+          alt="Інтер'єр холу"
+          width="200"
+          height="278"
+        />
+      </picture>
+      <p class="feature__text-hall">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+
+    <section class="slider-section" data-slider="team-slider">
+      <!-- Slider main container -->
+      <div class="swiper" data-slider="team-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  /src/images/slider-homepage/features-glass-mobile.jpg    1x,
+                  /src/images/slider-homepage/features-glass-mobile@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width: 1023px)"
+              />
+              <source
+                srcset="
+                  /src/images/slider-homepage/features-glass-tablet.jpg    1x,
+                  /src/images/slider-homepage/features-glass-tablet@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width: 1279px)"
+              />
+              <source
+                srcset="
+                  /src/images/slider-homepage/features-glass-desktop.jpg    1x,
+                  /src/images/slider-homepage/features-glass-desktop@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <img
+                class="swiper-image"
+                src="/src/images/slider-homepage/features-glass-mobile.jpg"
+                alt="Келих вина"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  /src/images/slider-homepage/features-meal-mobile.jpg    1x,
+                  /src/images/slider-homepage/features-meal-mobile@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width: 1023px)"
+              />
+              <source
+                srcset="
+                  /src/images/slider-homepage/features-meal-tablet.jpg    1x,
+                  /src/images/slider-homepage/features-meal-tablet@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width: 1279px)"
+              />
+              <source
+                srcset="
+                  /src/images/slider-homepage/features-meal-desktop.jpg    1x,
+                  /src/images/slider-homepage/features-meal-desktop@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <img
+                class="swiper-image"
+                src="/src/images/slider-homepage/features-meal-mobile.jpg"
+                alt=""
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  /src/images/slider-homepage/features-restaurant-mobile.jpg    1x,
+                  /src/images/slider-homepage/features-restaurant-mobile@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width: 1023px)"
+              />
+              <source
+                srcset="
+                  /src/images/slider-homepage/features-restaurant-tablet.jpg    1x,
+                  /src/images/slider-homepage/features-restaurant-tablet@2x.jpg 2x
+                "
+                type="image/jpg"
+                media="(max-width: 1279px)"
+              />
+              <source
+                srcset="
+                  /src/images/slider-homepage/features-restaurant-desktop.jpg    1x,
+                  /src/images/slider-homepage/features-restaurant-desktop@2x.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <img
+                class="swiper-image"
+                src="/src/images/slider-homepage/features-restaurant-mobile.jpg"
+                alt=""
+              />
+            </picture>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-btns">
+          <button type="button" class="swiper-btn swiper-btn-prev">
+            <svg width="32" height="32">
+              <use href="/src/images/icons.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <button type="button" class="swiper-btn swiper-btn-next">
+            <svg width="32" height="32">
+              <use href="/src/images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
 </section>

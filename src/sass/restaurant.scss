@@ -6,6 +6,7 @@
 @import './layout/container';
 @import './utils/fonts';
 @import './utils/variables/colors';
+@import './utils/mixins';
 
 // Header section
 @import './reuse/logo';
@@ -14,12 +15,13 @@
 
 // Hero main section
 
-@import './components/hero-main-section';
+@import './components/hero-restaurant-section';
 @import './reuse/buttons';
 @import './reuse/socials';
 
 // Feature section
-@import './components/templates-section/feature-restaurant-section';
+@import './components/templates-section/feature-section';
+@import './reuse/swiper';
 
 // Restaurant-menu section
 @import './components/restaurant-section/restaurant-menu-section';
