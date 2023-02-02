@@ -16,9 +16,29 @@
             /src/images/feature/chief.jpg    1x,
             /src/images/feature/chief@2x.jpg 2x
           "
-          type="image"
+          type="image/jpg"
+          media="(max-width: 1023px)"
         />
-        <img src="/src/images/feature/chief.jpg" alt="Кухня ресторану" />
+        <source
+          srcset="
+            /src/images/feature/chief-tablet.jpg    1x,
+            /src/images/feature/chief-tablet@2x.jpg 2x
+          "
+          type="image/jpg"
+          media="(max-width: 1279px)"
+        />
+        <source
+          srcset="
+            /src/images/feature/chief-desktop.jpg    1x,
+            /src/images/feature/chief-desktop@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <img
+          class="feature__img-hall"
+          src="/src/images/feature/chief.jpg"
+          alt="Інтер'єр холу"
+        />
       </picture>
     </div>
     <div class="feature--flex">
@@ -28,9 +48,26 @@
             /src/images/feature/meat.jpg    1x,
             /src/images/feature/meat@2x.jpg 2x
           "
-          type="image"
+          type="image/jpg"
+          media="(max-width: 1023px)"
         />
-        <img src="/src/images/feature/meat.jpg" alt="Свіже м'ясо" />
+        <source
+          srcset="
+            /src/images/feature/meat-tablet.jpg    1x,
+            /src/images/feature/meat-tablet@2x.jpg 2x
+          "
+          type="image/jpg"
+          media="(max-width: 1279px)"
+        />
+        <source
+          srcset="
+            /src/images/feature/meat-desktop.jpg    1x,
+            /src/images/feature/meat-desktop@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+
+        <img src="/src/images/feature/meat.jpg" alt="Інтер'єр ресторану 1" />
       </picture>
       <p class="feature__text-hall">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -38,7 +75,7 @@
         veniam consequat sunt nostrud amet.
       </p>
     </div>
-    <div class="slider-section" data-slider="team-slider">
+    <div class="slider-section slider--feature" data-slider="team-slider">
       <!-- Slider main container -->
       <div class="swiper">
         <!-- Additional required wrapper -->
