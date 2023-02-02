@@ -85,7 +85,7 @@
         align-items: center;
         margin-bottom: 16px;
         &:first-child {
-            column-gap: 34px;
+            column-gap: 28px;
 
             @media screen and (min-width: $tablet) {
                 margin-bottom: 24px;
@@ -214,16 +214,17 @@
     }
 
     &__address-text {
-        display: flex;
-        flex-direction: column;
         font-family: 'Montserrat', 'Helvetica Neue', 'Roboto', 'Verdana', 'Tahoma', sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
         font-style: normal;
         letter-spacing: 0.01em;
-        color: var(--color-brand);
         text-decoration: none;
+        color: var(--color-brand);
+        display: flex;
+        flex-direction: column;
+        
     }
 
     &__address-dep {
