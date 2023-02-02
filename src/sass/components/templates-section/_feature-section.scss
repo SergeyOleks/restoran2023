@@ -1,7 +1,5 @@
 .feature {
     background-color: var(--bg-primary);
-    // Падінг тимчасовий
-    padding-top: 100px;
 
     &__text {
         font-family: 'Times New Roman';
@@ -9,8 +7,8 @@
         font-size: 20px;
         line-height: 1.15;
         color: var(--color-subtitle);
-    
-        padding-bottom: 12px;
+        margin-top: 16px;
+        margin-bottom: 12px;
     }
 
     &__title {
@@ -22,7 +20,7 @@
         color: var(--color-brand);
         text-transform: uppercase;
     
-        padding-bottom: 12px;
+        margin-bottom: 12px;
     }
 
     &__text-description {
