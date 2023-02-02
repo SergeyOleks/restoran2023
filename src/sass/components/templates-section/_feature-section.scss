@@ -1,6 +1,11 @@
 .feature {
     background-color: var(--bg-primary);
     padding-bottom: 20px;
+    padding-top: 16px;
+    @media screen and (min-width: $tablet) {
+        padding-top: 120px;
+        padding-bottom: 32px;
+    }
 
     &__text {
         font-family: 'Times New Roman';
@@ -8,8 +13,13 @@
         font-size: 20px;
         line-height: 1.15;
         color: var(--color-subtitle);
-        margin-top: 16px;
+        // margin-top: 16px;
         margin-bottom: 12px;
+        @media screen and (min-width: $tablet) {
+            font-size: 32px;
+            line-height: calc(37/32);
+            margin-bottom: 4px;
+        }
     }
 
     &__title {
@@ -22,6 +32,11 @@
         text-transform: uppercase;
     
         margin-bottom: 12px;
+        @media screen and (min-width: $tablet) {
+            font-size: 64px;
+            line-height: 1;
+            margin-bottom: 24px;
+        }
     }
 
     &__text-description {
@@ -32,27 +47,53 @@
         letter-spacing: 0.02em;
         color: var(--color-primary);
         max-width: 258px;
+        @media screen and (min-width: $tablet) {
+            font-size: 16px;
+            line-height: calc(20/16);
+            max-width: 439px;
+           }
+        @media screen and (min-width: $desktop) {
+            max-width: 518px;
+        }
     }
 
     &--flex {
         display: flex;
         align-items: center;
-
-        margin-top: 32px;
-        margin-bottom: 32px;
+        @media screen and (max-width: 1023px) {
+          margin-bottom: 32px;  
+        }
     }
-
+    .container {
+        @media screen and (min-width: $tablet) {
+            position: relative;
+        }
+    }
     &__img-restaurant {
         transform: translateX(57%);
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        margin-bottom: 32px;
+        @media screen and (min-width: $tablet) {
+        position: absolute;
+        top: -152px;
+        right: 33.5%;
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+        }
+        @media screen and (min-width: $desktop) {
+            right: 34.5%;
+        }
     }
 
     &__hall {
         margin-right: 20px;
-    }
-
-    &__img-hall {
-        width: 200px;
-        height: 278px;
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        @media screen and (min-width: $tablet) {
+            margin-right: 48px;
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+        }
+        @media screen and (min-width: $desktop) {
+            margin-right: 32px;
+        }
     }
 
     &__text-hall {
@@ -62,15 +103,45 @@
         line-height: 1.25;
         letter-spacing: 0.02em;
         color: var(--color-accent-secondary);
-        width: 163px;
+        max-width: 163px;
+        @media screen and (min-width: $tablet) {
+            font-size: 16px;
+            line-height: calc(20/16);
+            max-width: 312px;
+        }
     }
 
     &__flex-container {
         display: flex;
+        @media screen and (max-width: 1023px) {
         flex-wrap: wrap;
+        }
+         @media screen and (min-width: $tablet) {
+            justify-content: space-between;
+            
+         }
     }
 }
 
 .flex-text {
+    @media screen and (max-width: 1023px) {
     margin-bottom: 28px;
+    }
+    @media screen and (min-width: $tablet) {
+    margin-bottom: 142px;
+    }
+    @media screen and (min-width: $desktop) {
+    margin-bottom: 162px;
+    }
+}
+
+.slider--feature {
+@media screen and (min-width: $tablet) {
+padding-left: 496px;
+transform: translateY(-28px);
+}
+@media screen and (min-width: $desktop) {
+padding-left: 570px;
+transform: translateY(-147px);
+}
 }
