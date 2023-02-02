@@ -1,0 +1,77 @@
+.feature {
+    background-color: var(--bg-primary);
+    // Падінг тимчасовий
+    padding-top: 100px;
+
+    &__text {
+        font-family: 'Times New Roman';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.15;
+        color: var(--color-subtitle);
+    
+        padding-bottom: 12px;
+    }
+
+    &__title {
+        font-family: 'Film P3';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.075;
+        letter-spacing: 0.3em;
+        color: var(--color-brand);
+        text-transform: uppercase;
+    
+        padding-bottom: 12px;
+    }
+
+    &__text-description {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: var(--color-primary);
+        max-width: 258px;
+    }
+
+    &--flex {
+        display: flex;
+        align-items: center;
+
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    &__img-restaurant {
+        transform: translateX(57%);
+    }
+
+    &__hall {
+        margin-right: 20px;
+    }
+
+    &__img-hall {
+        width: 200px;
+        height: 278px;
+    }
+
+    &__text-hall {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: var(--color-accent-secondary);
+        width: 163px;
+    }
+
+    &__flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.flex-text {
+    margin-bottom: 28px;
+}
