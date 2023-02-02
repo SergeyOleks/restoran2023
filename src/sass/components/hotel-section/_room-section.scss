@@ -4,18 +4,36 @@
 //$desktop: 1280px;
 .section-room {
   padding: 32px 0;
+
+  @media screen and (min-width: $tablet) {
+      padding: 0;
+    }
 }
 .lux {
   background-color: var(--bg-primary);
+  
+  @media screen and (min-width: $tablet) {
+      padding-top: 62px;
+      position: relative;
+    }
 }
 .lux__container {
-  // width: 100%;
 }
 .duo {
   background-color: var(--bg-primary);
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 62px;
+        position: relative;
+      }
 }
 .triple {
   background-color: var(--bg-secondary);
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 62px;
+        position: relative;
+      }
 }
 .room-subtitle {
   font-family: 'Times New Roman';
@@ -27,6 +45,10 @@
   color: var(--color-subtitle);
 
   margin-bottom: 8px;
+
+  @media screen and (min-width: $tablet) {
+      margin-bottom: 4px;
+    }
 }
 .room-subtitle__reverse {
   text-align: end;
@@ -57,6 +79,11 @@
 
   margin-bottom: 12px;
   margin-top: 32px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 62px;
+    margin-bottom: 16px;
+    }
 }
 .room-title__reverse {
   text-align: end;
@@ -71,10 +98,10 @@
 
   color: var(--color-primary);
 
+  width: 258px;
   margin-bottom: 32px;
 }
 .room-content__container {
-  width: 258px;
   margin-left: 83px;
 }
 .slider-room {
@@ -83,6 +110,7 @@
 
   margin-bottom: 20px;
 }
+
 .slider__washbasin {
   width: 194px;
 }
@@ -92,19 +120,50 @@
 .slider__way {
   display: flex;
   gap: 34px;
+  margin-bottom: 25px;
+}
+.slider__way__reverse {
+  justify-content: end;
 }
 .room-photo {
   width: 244px;
   margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    width: 400px;
+    top: 0;
+    }
 }
-.room-photo__container {
+.room-photo__reverse {
   display: flex;
   justify-content: end;
+
+@media screen and (min-width: $tablet) {
+
+  }
 }
-.room--button__container {
+.room-item {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+.room-item__reverse {
+  @media screen and (min-width: $tablet) {
+    flex-direction: row-reverse;
+  }
+}
+.room-button__container {
   margin-left: 80px;
 
-    a:first-child {
-        margin-bottom: 16px;
-      }
+  a:first-child {
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+    }
 }
+
+
