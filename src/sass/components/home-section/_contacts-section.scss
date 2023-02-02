@@ -83,7 +83,7 @@
         align-items: center;
         margin-bottom: 16px;
         &:first-child {
-            column-gap: 22px;
+            column-gap: 32px;
 
             @media screen and (min-width: $tablet) {
                 margin-bottom: 24px;
@@ -215,6 +215,7 @@
         font-family: url(/src/fonts/montserrat-v25-latin-regular.woff), url(/src/fonts/montserrat-v25-latin-regular.woff2);
         font-size: 16px;
         line-height: 1.25;
+        font-style: normal;
         letter-spacing: 0.01em;
         color: var(--color-brand);
         text-decoration: none;
