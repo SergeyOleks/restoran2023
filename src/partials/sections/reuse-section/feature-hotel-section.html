@@ -1,26 +1,193 @@
 <section class="feature-hotel">
-    <div class="container">
-        <div class="feature-hotel__flex-container">
-            <div class="flex-hotel-text">
-            <p class="feature-hotel__text">Amet minim mollit non</p>
-            <h2 lang="en" class="feature-hotel__title">Mimiho</h2>
-            <p class="feature-hotel__text-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+  <div class="container">
+      <div class="feature-hotel__flex-container">
+         <div class="flex-hotel-text">
+          <p class="feature-hotel__text">Amet minim mollit non</p>
+          <h2 lang="en" class="feature-hotel__title">Mimiho</h2>
+          <p class="feature-hotel__text-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+         </div>
+         <picture>
+          <source
+            srcset="
+            /src/images/reuse/double-room.jpg    1x,
+            /src/images/reuse/double-room@2x.jpg 2x
+            "
+            type="image/jpg"
+            media="(max-width: 1023px)"
+          />
+          <source
+            srcset="
+              /src/images/feature/hotel-number-tablet-optimized.jpg    1x,
+              /src/images/feature/hotel-number-tablet@2x-optimized.jpg 2x
+            "
+            type="image/jpg"
+            media="(max-width: 1279px)"
+          />
+          <source
+            srcset="
+              /src/images/feature/hotel-number-desktop-optimized.jpg    1x,
+              /src/images/feature/hotel-number-desktop@2x-optimized.jpg 2x
+            "
+            type="image/jpg"
+          />
+          <img class="feature-hotel__img"
+            src="/src/images/reuse/double-room.jpg"
+            alt="Номер готелю"
+          />
+         </picture>
+      </div>
+      <div class="feature-hotel--flex">
+          <p class="feature-hotel__text-hall">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          <picture class="feature-hotel__hall">
+            <source
+              srcset="
+              /src/images/feature/hotel.jpg    1x,
+              /src/images/feature/hotel@2x.jpg 2x
+              "
+              type="image/jpg"
+              media="(max-width: 1023px)"
+            />
+            <source
+              srcset="
+                /src/images/feature/holl-hotel-tablet-optimized.jpg    1x,
+                /src/images/feature/holl-hotel-tablet@2x-optimized.jpg 2x
+              "
+              type="image/jpg"
+              media="(max-width: 1279px)"
+            />
+            <source
+              srcset="
+                /src/images/feature/holl-hotel-desktop-optimized.jpg    1x,
+                /src/images/feature/holl-hotel-desktop@2x-optimized.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img class="feature-hotel__img-hall"
+              src="/src/images/feature/hotel.jpg"
+              alt="Інтер'єр холу отеля"
+            />
+          </picture>
+      </div>
+      <div class="slider-section slider--transform" data-slider="team-slider">
+        <!-- Slider main container -->
+        <div class="swiper swiper--left">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    /src/images/slider-homepage/feature-towel-mobile.jpg    1x,
+                    /src/images/slider-homepage/feature-towel-mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 1023px)"
+                />
+                <source
+                  srcset="
+                    /src/images/slider-homepage/feature-towel-tablet.jpg    1x,
+                    /src/images/slider-homepage/feature-towel-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    /src/images/slider-homepage/feature-towel-desktop.jpg    1x,
+                    /src/images/slider-homepage/feature-towel-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="swiper-image"
+                  src="/src/images/slider-homepage/feature-towel-mobile.jpg"
+                  alt="Келих вина"
+                />
+              </picture>
             </div>
-            <picture class="feature-hotel__img">
-                <source srcset="/src/images/reuse/double-room.jpg 1x, /src/images/reuse/double-room@2x.jpg 2x" type="image" />
-                <img src="/src/images/reuse/double-room.jpg" alt="Номер готелю" />
-            </picture>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    /src/images/slider-homepage/feature-registration-mobile.jpg    1x,
+                    /src/images/slider-homepage/feature-registration-mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 1023px)"
+                />
+                <source
+                  srcset="
+                    /src/images/slider-homepage/feature-registration-tablet.jpg    1x,
+                    /src/images/slider-homepage/feature-registration-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    /src/images/slider-homepage/feature-registration-desktop.jpg    1x,
+                    /src/images/slider-homepage/feature-registration-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="swiper-image"
+                  src="/src/images/slider-homepage/feature-registration-mobile.jpg"
+                  alt=""
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    /src/images/slider-homepage/feature-hotel-mobile.jpg    1x,
+                    /src/images/slider-homepage/feature-hotel-mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 1023px)"
+                />
+                <source
+                  srcset="
+                    /src/images/slider-homepage/feature-hotel-tablet.jpg    1x,
+                    /src/images/slider-homepage/feature-hotel-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    /src/images/slider-homepage/feature-hotel-desktop.jpg    1x,
+                    /src/images/slider-homepage/feature-hotel-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="swiper-image"
+                  src="/src/images/slider-homepage/feature-hotel-mobile.jpg"
+                  alt=""
+                />
+              </picture>
+            </div>
+          </div>
+  
+          <!-- If we need navigation buttons -->
+          <div class="swiper-btns swiper-btns--left">
+            <button type="button" class="swiper-btn swiper-btn-prev">
+              <svg width="32" height="32">
+                <use href="/src/images/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+            <button type="button" class="swiper-btn swiper-btn-next">
+              
+              <svg width="32" height="32">
+                <use href="/src/images/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="feature-hotel--flex">
-            <p class="feature-hotel__text-hall">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            <picture class="feature-hotel__hall">
-                <source srcset="/src/images/feature/hotel.jpg 1x, /src/images/feature/hotel@2x.jpg 2x" type="image" />
-                <img class="feature-hotel__img-hall" src="/src/images/feature/hotel.jpg" alt="Інтер'єр холу отеля" width="200" height="278" />
-            </picture>
-        </div>
-        <picture class="feature-hotel__img-slide">
-            <source srcset="/src/images/feature/hotel-registration.jpg 1x, /src/images/feature/hotel-registration@2x.jpg 2x" type="image" />
-            <img src="/src/images/feature/hotel-registration.jpg" alt="Регістрація в отелі" />
-        </picture>
-    </div>
+      </div>
+
+  </div>
 </section>
