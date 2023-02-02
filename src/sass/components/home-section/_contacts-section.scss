@@ -29,7 +29,8 @@
 
 
     &__title {
-        font-family: url(/src/fonts/FilmP3Bold.woff);        
+        font-family: 'Film P3';       
+        font-weight: 700;
         margin-top: 0;
         margin-bottom: 12px;      
         font-size: 40px;
@@ -49,7 +50,8 @@
     }
 
     &__text {
-        font-family: url(/src/fonts/montserrat-v25-latin-600.woff), url(/src/fonts/montserrat-v25-latin-600.woff2);
+        font-family: 'Montserrat', 'Helvetica Neue', 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+        font-weight: 600;
         font-size: 16px;
         line-height: 1.25;
         margin-top: 0;
@@ -118,7 +120,8 @@
     }
 
     &__label {
-        font-family: url(/src/fonts/montserrat-v25-latin-500.woff), url(/src/fonts/montserrat-v25-latin-500.woff2);
+        font-family: 'Montserrat', 'Helvetica Neue', 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+        font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         margin-top: 0;
@@ -175,7 +178,8 @@
 
     &__phone {
 
-        font-family: url(/src/fonts/montserrat-v25-latin-regular.woff), url(/src/fonts/montserrat-v25-latin-regular.woff2);
+        font-family: 'Montserrat', 'Helvetica Neue', 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+        font-weight: 400;
         font-size: 14px;
         line-height: 1.214;
         letter-spacing: 0.02em;
@@ -212,7 +216,8 @@
     &__address-text {
         display: flex;
         flex-direction: column;
-        font-family: url(/src/fonts/montserrat-v25-latin-regular.woff), url(/src/fonts/montserrat-v25-latin-regular.woff2);
+        font-family: 'Montserrat', 'Helvetica Neue', 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+        font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
         font-style: normal;
