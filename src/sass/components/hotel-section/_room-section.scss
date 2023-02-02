@@ -9,7 +9,8 @@
   overflow: hidden;
 
   @media screen and (min-width: $tablet) {
-      padding: 0;
+    max-width: $tablet;
+    padding: 0;
     }
 }
 .lux {
@@ -48,7 +49,8 @@
   margin-bottom: 8px;
 
   @media screen and (min-width: $tablet) {
-      margin-bottom: 4px;
+    font-size: 32px;
+    margin-bottom: 4px;
     }
 }
 .room-subtitle__reverse {
@@ -63,6 +65,10 @@
   letter-spacing: 0.3em;
 
   color: var(--color-brand);
+
+  @media screen and (min-width: $tablet) {
+      font-size: 64px;
+    }
 }
 .logo-room__reverse {
   display: block;
@@ -82,12 +88,16 @@
   margin-top: 32px;
 
   @media screen and (min-width: $tablet) {
+    font-size: 30px;
     margin-top: 62px;
     margin-bottom: 16px;
     }
 }
 .room-title__reverse {
   text-align: end;
+  @media screen and (min-width: $tablet) {
+      margin-right: 43px;
+    }
 }
 .room-content {
   font-family: 'Montserrat';
@@ -101,9 +111,18 @@
 
   width: 258px;
   margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    width: 439px;
+    }
 }
 .room-content__container {
   margin-left: 83px;
+
+  @media screen and (min-width: $tablet) {
+      margin-left: 510px;
+    }
 }
 .slider-room {
   position: relative;
@@ -115,11 +134,21 @@
   display: flex;
   position: absolute;
   transform: translate(-35%, 0);
+
+  @media screen and (min-width: $tablet) {
+      position: static;
+      transform: translate(0, 0);
+    }
 }
 .slider-room-reverse {
   display: flex;
   position: absolute;
   transform: translate(34%, 0);
+
+  @media screen and (min-width: $tablet) {
+      position: static;
+      transform: translate(0, 0);
+    }
 }
 .slider__washbasin {
   width: 194px;
