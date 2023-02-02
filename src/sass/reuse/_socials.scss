@@ -1,5 +1,9 @@
 .social-networks {
   @include centeringFlexbox($just-cont: flex-start);
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .social-networks__item:not(:last-child) {
