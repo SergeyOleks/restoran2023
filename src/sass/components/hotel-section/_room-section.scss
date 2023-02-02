@@ -3,7 +3,10 @@
 //$tablet: 1024px;
 //$desktop: 1280px;
 .section-room {
+  max-width: $mobile;
   padding: 32px 0;
+  margin: 0 auto;
+  overflow: hidden;
 
   @media screen and (min-width: $tablet) {
       padding: 0;
@@ -16,8 +19,6 @@
       padding-top: 62px;
       position: relative;
     }
-}
-.lux__container {
 }
 .duo {
   background-color: var(--bg-primary);
@@ -105,12 +106,21 @@
   margin-left: 83px;
 }
 .slider-room {
+  position: relative;
   display: flex;
   gap: 16px;
-
   margin-bottom: 20px;
 }
-
+.slider-room__container {
+  display: flex;
+  position: absolute;
+  transform: translate(-35%, 0);
+}
+.slider-room-reverse {
+  display: flex;
+  position: absolute;
+  transform: translate(34%, 0);
+}
 .slider__washbasin {
   width: 194px;
 }
@@ -120,6 +130,7 @@
 .slider__way {
   display: flex;
   gap: 34px;
+  margin-top: 215px;
   margin-bottom: 25px;
 }
 .slider__way__reverse {
@@ -128,6 +139,7 @@
 .room-photo {
   width: 244px;
   margin-bottom: 32px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
 
   @media screen and (min-width: $tablet) {
     position: absolute;
