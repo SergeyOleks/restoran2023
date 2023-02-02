@@ -6,6 +6,9 @@
         padding-top: 120px;
         padding-bottom: 32px;
     }
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 50px;
+    }
 
     &__text {
         font-family: 'Times New Roman';
@@ -67,6 +70,10 @@
     .container {
         @media screen and (min-width: $tablet) {
             position: relative;
+            max-height: 1077px;
+        }
+        @media screen and (min-width: $desktop) {
+            max-height: 1091px;
         }
     }
     &__img-restaurant {
