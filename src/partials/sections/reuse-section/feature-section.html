@@ -16,8 +16,25 @@
             /src/images/feature/restaurant-interior.jpg    1x,
             /src/images/feature/restaurant-interior@2x.jpg 2x
           "
-          type="image"
+          type="image/jpg"
+          media="(max-width: 1023px)"
         />
+        <source
+          srcset="
+            /src/images/feature/restaurant-interior-tablet.jpg    1x,
+            /src/images/feature/restaurant-interior-tablet@2x.jpg 2x
+          "
+          type="image/jpg"
+          media="(max-width: 1279px)"
+        />
+        <source
+          srcset="
+            /src/images/feature/restaurant-interior-desktop.jpg    1x,
+            /src/images/feature/restaurant-interior-desktop@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+
         <img
           src="/src/images/feature/restaurant-interior.jpg"
           alt="Інтер'єр ресторану 1"
@@ -31,14 +48,28 @@
             /src/images/feature/restaurant-hall.jpg    1x,
             /src/images/feature/restaurant-hall@2x.jpg 2x
           "
-          type="image"
+          type="image/jpg"
+          media="(max-width: 1023px)"
+        />
+        <source
+          srcset="
+            /src/images/feature/restaurant-hall-tablet.jpg    1x,
+            /src/images/feature/restaurant-hall-tablet@2x.jpg 2x
+          "
+          type="image/jpg"
+          media="(max-width: 1279px)"
+        />
+        <source
+          srcset="
+            /src/images/feature/restaurant-hall-desktop.jpg    1x,
+            /src/images/feature/restaurant-hall-desktop@2x.jpg 2x
+          "
+          type="image/jpg"
         />
         <img
           class="feature__img-hall"
           src="/src/images/feature/restaurant-hall.jpg"
           alt="Інтер'єр холу"
-          width="200"
-          height="278"
         />
       </picture>
       <p class="feature__text-hall">
@@ -48,7 +79,7 @@
       </p>
     </div>
 
-    <section class="slider-section" data-slider="team-slider">
+    <div class="slider-section slider--feature" data-slider="team-slider">
       <!-- Slider main container -->
       <div class="swiper" data-slider="team-slider">
         <!-- Additional required wrapper -->
@@ -166,6 +197,6 @@
           </button>
         </div>
       </div>
-    </section>
+    </div>
   </div>
 </section>
