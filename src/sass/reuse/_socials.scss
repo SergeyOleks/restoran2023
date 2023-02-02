@@ -1,8 +1,15 @@
-.socials {
-    display: flex;
-    gap: 20px;
+.social-networks {
+  @include centeringFlexbox($just-cont: flex-start);
+}
 
-    &__icon {
-        fill: #F3C653;
-    }
+.social-networks__item:not(:last-child) {
+  margin: 0 20px 0 0;
+}
+
+.social-networks__link {
+  @include centeringFlexbox();
+}
+
+.social-networks__icon {
+  fill: rgba(243, 198, 83, 0.7);
 }

@@ -7,6 +7,7 @@
 @import './utils/fonts';
 @import './utils/variables/colors';
 @import './utils/templates';
+@import './utils/mixins';
 
 // Header section
 @import './reuse/logo';
@@ -24,5 +25,3 @@
 
 // Footer section
 @import './components/footer';
-
-
