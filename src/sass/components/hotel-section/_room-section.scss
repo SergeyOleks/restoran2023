@@ -9,7 +9,7 @@
   background-color: var(--bg-primary);
 }
 .lux__container {
-  width: 100%;
+  // width: 100%;
 }
 .duo {
   background-color: var(--bg-primary);
@@ -28,6 +28,11 @@
 
   margin-bottom: 8px;
 }
+
+.room-subtitle__reverse {
+  text-align: end;
+}
+
 .logo-room {
   font-family: 'Film P3', sans-serif;
 
@@ -38,6 +43,12 @@
 
   color: var(--color-brand);
 }
+
+.logo-room__reverse {
+  display: block;
+  text-align: end;
+}
+
 .room-title {
   font-family: 'Times New Roman';
 
@@ -51,6 +62,11 @@
   margin-bottom: 12px;
   margin-top: 32px;
 }
+
+.room-title__reverse {
+  text-align: end;
+}
+
 .room-content {
   font-family: 'Montserrat';
 
@@ -62,8 +78,13 @@
   color: var(--color-primary);
 
   margin-bottom: 32px;
-  width: 258px;
 }
+
+.room-content__container {
+  width: 258px;
+  margin-left: 83px;
+}
+
 .slider-room {
   display: flex;
   gap: 16px;
