@@ -23,6 +23,9 @@
 }
 
 .hero {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1280px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../images/hero/hero-restaurant.jpg);
   background-repeat: no-repeat;
@@ -36,7 +39,7 @@
       url(../images/hero/hero-restaurant@2x.jpg);
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $mobile) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/hero/hero-restaurant-tablet.jpg);
 
@@ -51,7 +54,7 @@
     }
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $tablet) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/hero/hero-restaurant-desktop.jpg);
 
