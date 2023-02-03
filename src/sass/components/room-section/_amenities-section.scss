@@ -1,6 +1,29 @@
+.amenities__container {
+  width: 100%;
+  margin: 0 auto;
+  @media screen and (max-width: 1023px) {
+    & {
+      max-width: 414px;
+      padding: 0 15px;
+    }
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    & {
+      max-width: $tablet;
+      padding: 0 70px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    & {
+      max-width: 1200px;
+      padding: 0px 180px 0px 85px;
+    }
+  }
+}
+
 .amenities {
   background-color: #fffdee;
-  @media screen and (max-width: 413px) {
+  @media screen and (max-width: 1023px) {
     &__title {
       padding-top: 32px;
     }
@@ -8,35 +31,12 @@
       padding-bottom: 32px;
     }
   }
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $tablet) {
     &__title {
       padding-top: 48px;
     }
     &__ref {
       padding-bottom: 48px;
-    }
-  }
-}
-
-.amenities__container {
-  width: 100%;
-  margin: 0 auto;
-  @media screen and (max-width: 413px) {
-    & {
-      max-width: $mobile;
-      padding: 0 15px;
-    }
-  }
-  @media screen and (min-width: $mobile) and (max-width: 1023px) {
-    & {
-      max-width: $tablet;
-      padding: 0 47px;
-    }
-  }
-  @media screen and (min-width: $tablet) {
-    & {
-      max-width: $desktop;
-      padding: 0px 180px 0px 85px;
     }
   }
 }
@@ -83,13 +83,13 @@
 }
 
 .amenities {
-  @media screen and (max-width: 413px) {
+  @media screen and (max-width: 1023px) {
     &__btn {
       font-size: 20px;
       padding: 20px 43px;
     }
   }
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $tablet) {
     &__btn {
       font-size: 24px;
       padding: 18px 38px;
@@ -141,12 +141,12 @@
 }
 
 .amenities {
-  @media screen and (max-width: 413px) {
+  @media screen and (max-width: 1023px) {
     &__list-item:not(:last-child) {
       margin-bottom: 16px;
     }
   }
-  @media screen and (min-width: $mobile) and (max-width: 1023px) {
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
     &__list {
       display: flex;
       align-items: center;
@@ -160,7 +160,7 @@
       margin-left: 80px;
     }
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
     &__list {
       display: flex;
       align-items: center;
@@ -177,7 +177,7 @@
 }
 
 .amenities {
-  @media screen and (max-width: 413px) {
+  @media screen and (max-width: 1023px) {
     &__btn-wrapper {
       display: flex;
       align-items: center;
@@ -186,7 +186,7 @@
       margin-top: 32px;
     }
   }
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $tablet) {
     &__btn-wrapper {
       display: flex;
       align-items: center;
