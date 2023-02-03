@@ -11,6 +11,7 @@
   @media screen and (min-width: $tablet) {
     max-width: $tablet;
     padding: 0;
+    overflow: visible;
     }
 }
 .lux {
@@ -115,6 +116,7 @@
   @media screen and (min-width: $tablet) {
     font-size: 16px;
     width: 439px;
+    margin-bottom: 176px;
     }
 }
 .room-content__container {
@@ -129,6 +131,10 @@
   display: flex;
   gap: 16px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+     
+    }
 }
 .slider-room__container {
   display: flex;
@@ -138,16 +144,16 @@
   @media screen and (min-width: $tablet) {
       position: static;
       transform: translate(0, 0);
+      gap: 40px;
     }
 }
 .slider-room-reverse {
   display: flex;
-  position: absolute;
   transform: translate(34%, 0);
 
   @media screen and (min-width: $tablet) {
-      position: static;
       transform: translate(0, 0);
+      gap: 40px;
     }
 }
 .slider__washbasin {
@@ -161,9 +167,24 @@
   gap: 34px;
   margin-top: 215px;
   margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet) {
+      margin-top: 15px;
+      margin-bottom: 45px;
+      margin-left: 330px;
+    }
 }
 .slider__way__reverse {
+  display: flex;
+  gap: 34px;
+  margin-bottom: 25px;
   justify-content: end;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-bottom: 45px;
+  }
 }
 .room-photo {
   width: 244px;
@@ -174,6 +195,8 @@
     position: absolute;
     width: 400px;
     top: 0;
+    margin-bottom: 0px;
+    transform: translate(-65px, -32px);
     }
 }
 .room-photo__reverse {
@@ -181,7 +204,11 @@
   justify-content: end;
 
 @media screen and (min-width: $tablet) {
-
+  }
+}
+.room-photo__container {
+  @media screen and (min-width: $tablet) {
+    padding-left: 130px;
   }
 }
 .room-item {
@@ -204,6 +231,22 @@
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-direction: column;
+      margin-left: 267px;
+      margin-top: 40px;
+    }
+}
+.room-button__reverse {
+  margin-left: 80px;
+  
+    a:first-child {
+      margin-bottom: 16px;
+    }
+  @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0;
+      margin-top: 40px;
+      padding-right: 290px;
     }
 }
 
