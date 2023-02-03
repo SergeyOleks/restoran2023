@@ -1,5 +1,12 @@
 .feature-hotel {
+    padding-bottom: 20px;
     background-color: var(--bg-primary);
+    @media screen and (min-width: $tablet) {
+        padding-bottom: 32px;
+    }
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 50px;
+    }
 
     &__text {
         font-family: 'Times New Roman';
@@ -10,6 +17,12 @@
         
         margin-top: 18px;
         margin-bottom: 12px;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 32px;
+            line-height: 1.16;
+            margin-top: 120px;
+        }
     }
 
     &__title {
@@ -22,6 +35,11 @@
         text-transform: uppercase;
     
         margin-bottom: 12px;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 64px;
+            line-height: 1.08;
+        }
     }
 
     &__text-description {
@@ -31,7 +49,31 @@
         line-height: 1.25;
         letter-spacing: 0.02em;
         color: var(--color-primary);
-        max-width: 258px;
+        max-width: 242px;
+        text-align: left;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 16px;
+            line-height: 1.25;
+            max-width: 419px;
+        }
+        @media screen and (min-width: $desktop) {
+            max-width: 488px;
+        }
+    }
+
+    &__img {
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        @media screen and (min-width: $tablet) {
+            box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+            border-radius: 2px;
+            margin-right: 46px;
+            transform: translateY(-24px);
+        }
+        @media screen and (min-width: $desktop) {
+            border-radius: 0;
+        }
     }
 
     &--flex {
@@ -43,12 +85,26 @@
     }
 
     &__hall {
-        margin-right: 20px;
+        margin-left: 21px;
+        @media screen and (min-width: $tablet) {
+            margin-left: 48px;
+        }
+        @media screen and (min-width: $desktop) {
+            margin-left: 45px;
+        }
     }
 
     &__img-hall {
-        width: 200px;
-        height: 278px;
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        @media screen and (min-width: $tablet) {
+            box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+            border-radius: 2px;
+            transform: translateY(-80px);
+        }
+        @media screen and (min-width: $desktop) {
+            border-radius: 0;
+        }
     }
 
     &__text-hall {
@@ -58,17 +114,54 @@
         line-height: 1.25;
         letter-spacing: 0.02em;
         color: var(--color-accent-secondary);
-        width: 163px;
+        max-width: 163px;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 16px;
+            line-height: 1.25;
+            max-width: 312px;
+            margin-left: 220px;
+            transform: translateY(-80px);
+        }
+        @media screen and (min-width: $desktop) {
+            max-width: 311px;
+            margin-left: 379px;
+        }
     }
 
     &__flex-container {
         display: flex;
         flex-wrap: wrap;
+        @media screen and (min-width: $tablet) {
+            flex-wrap: nowrap;
+            flex-direction: row-reverse;
+        }
     }
 }
 
 .flex-hotel-text {
     text-align: right;
     margin-bottom: 28px;
-    transform: translateX(49%);
+    @media screen and (max-width: 1023px) {
+        transform: translateX(60%);
+    }
+    
+    // @media screen and (min-width: $desktop) {
+    //     transform: translateX(127%);
+    // }
+}
+
+.slider--transform {
+    @media screen and (min-width: $tablet) {
+        transform: translateY(-130px);
+    }
+}
+
+.container {
+    @media screen and (min-width: $tablet) {
+       max-height: 1206px;
+    }
+    @media screen and (min-width: $desktop) {
+        max-height: 1289px;
+    }
 }
