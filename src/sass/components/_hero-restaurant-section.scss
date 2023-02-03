@@ -68,58 +68,69 @@
         url(../images/hero/hero-restaurant-desktop@2x.jpg);
     }
   }
-  &__address {
+
+&__address {
+  position: absolute;
+
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-bottom: 70px;
+  margin-right: 0;
+  margin-left: auto;
+  padding: 8px 7px 9px 34px;
+
+  max-width: 210px;
+  min-height: 47px;
+
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+
+  @media (min-width: $tablet) {
+    min-width: 285px;
+    min-height: 58px;
     position: absolute;
-
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    margin-bottom: 70px;
-    margin-right: 0;
-    margin-left: auto;
-    padding: 8px 7px 9px 34px;
-
-    max-width: 210px;
-    height: 47px;
-
-    border: 1px solid rgba(243, 198, 83, 0.7);
-    border-radius: 2px;
-
-    @media (min-width: $tablet) {
-      position: absolute;
-      left: 47px;
-      top: 600px;
-      margin-bottom: 0;
-    }
-
-    @media (min-width: $desktop) {
-      left: 85px;
-    }
+    top: 610px;
+    margin-bottom: 0;
+    padding: 8px 7px 9px 44px;
   }
 
-  &__address-link {
-    display: flex;
-
-    gap: 8px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.01em;
-
-    color: var(--color-address-header);
+  @media (min-width: $desktop) {
+    left: 85px;
   }
+}
 
-  &__icon {
-    position: absolute;
-    top: 14px;
-    left: 6px;
-    fill: var(--color-accent);
+&__address-link {
+  display: block;
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.06em;
+
+  color: var(--color-address-header);
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
   }
+}
+
+&__icon {
+  position: absolute;
+  top: 14px;
+  left: 6px;
+  fill: var(--color-accent);
+
+  @media (min-width: $tablet) {
+    width: 24px;
+    height: 24px;
+    top: 16px;
+    left: 10px;
+  }
+}
 
   &__title {
     margin-bottom: 24px;
