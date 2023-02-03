@@ -27,14 +27,18 @@
         transition: ease-in-out 0.5s;
 
         &.swiper-slide-active {
-            max-width: 245px;
-            @media (min-width: $tablet) {
-                width: 194px !important;
+                @media (max-width: 1023px) {
+                    max-width: 245px;
+                }
+        
+                @media (min-width: $tablet) {
+                    width: 194px !important;
+                }
+        
+                @media (min-width: $desktop) {
+                    width: 254px !important;
+                }
             }
-             @media (min-width: $desktop) {
-                max-width: 254px !important;
-            }
-        }
 
         &.swiper-slide-next {
             // краще виставляти у %
@@ -59,7 +63,7 @@
 .swiper-image {
     min-height: 245px;
     object-fit: cover;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
     @media (min-width: $tablet) {
         min-height: 194px;
