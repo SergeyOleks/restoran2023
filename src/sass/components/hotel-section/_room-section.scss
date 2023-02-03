@@ -3,44 +3,38 @@
 //$tablet: 1024px;
 //$desktop: 1280px;
 .section-room {
-  max-width: $mobile;
   padding: 32px 0;
   margin: 0 auto;
   overflow: hidden;
 
   @media screen and (min-width: $tablet) {
-    max-width: $tablet;
     padding: 0;
     overflow: visible;
-    }
-  
-  @media screen and (min-width: $desktop) {
-      max-width: $desktop;
-    }
+  }
 }
 .lux {
   background-color: var(--bg-primary);
-  
+
   @media screen and (min-width: $tablet) {
-      padding-top: 72px;
-      position: relative;
-    }
+    padding-top: 72px;
+    position: relative;
+  }
 }
 .duo {
   background-color: var(--bg-primary);
 
-    @media screen and (min-width: $tablet) {
-        padding-top: 62px;
-        position: relative;
-      }
+  @media screen and (min-width: $tablet) {
+    padding-top: 62px;
+    position: relative;
+  }
 }
 .triple {
   background-color: var(--bg-secondary);
 
-    @media screen and (min-width: $tablet) {
-        padding-top: 62px;
-        position: relative;
-      }
+  @media screen and (min-width: $tablet) {
+    padding-top: 62px;
+    position: relative;
+  }
 }
 .room-subtitle {
   font-family: 'Times New Roman';
@@ -56,14 +50,14 @@
   @media screen and (min-width: $tablet) {
     font-size: 32px;
     margin-bottom: 4px;
-    }
+  }
 }
 .room-subtitle__reverse {
   text-align: end;
 
   @media screen and (min-width: $desktop) {
-      margin-right: 57px;
-    }
+    margin-right: 57px;
+  }
 }
 .logo-room {
   font-family: 'Film P3', sans-serif;
@@ -76,16 +70,16 @@
   color: var(--color-brand);
 
   @media screen and (min-width: $tablet) {
-      font-size: 64px;
-    }
+    font-size: 64px;
+  }
 }
 .logo-room__reverse {
   display: block;
   text-align: end;
 
   @media screen and (min-width: $desktop) {
-      margin-right: 36px;
-    }
+    margin-right: 36px;
+  }
 }
 .room-title {
   font-family: 'Times New Roman';
@@ -104,23 +98,23 @@
     font-size: 30px;
     margin-top: 62px;
     margin-bottom: 16px;
-    }
+  }
 
   @media screen and (min-width: $desktop) {
-        font-size: 36px;
-        font-weight: 600;
-        margin-top: 72px;
-        margin-bottom: 24px;
-    }
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 72px;
+    margin-bottom: 24px;
+  }
 }
 .room-title__reverse {
   text-align: end;
   @media screen and (min-width: $tablet) {
-      margin-right: 43px;
-    }
+    margin-right: 43px;
+  }
   @media screen and (min-width: $desktop) {
-      margin-right: 57px;
-    }
+    margin-right: 57px;
+  }
 }
 .room-content {
   font-family: 'Montserrat';
@@ -140,24 +134,24 @@
     line-height: 1.218;
     width: 439px;
     margin-bottom: 176px;
-    }
+  }
 
   @media screen and (min-width: $desktop) {
-        width: 400px;
-        font-weight: 700;
-        margin-bottom: 188px;
-    }
+    width: 400px;
+    font-weight: 700;
+    margin-bottom: 188px;
+  }
 }
 .room-content__container {
   margin-left: 83px;
 
   @media screen and (min-width: $tablet) {
-      margin-left: 510px;
-    }
+    margin-left: 510px;
+  }
 
   @media screen and (min-width: $desktop) {
-      margin-left: 600px;
-    }
+    margin-left: 600px;
+  }
 }
 .slider-room {
   position: relative;
@@ -165,8 +159,7 @@
   margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
-     
-    }
+  }
 }
 .slider-room__container {
   display: flex;
@@ -175,10 +168,10 @@
   gap: 16px;
 
   @media screen and (min-width: $tablet) {
-      position: static;
-      transform: translate(0, 0);
-      gap: 40px;
-    }
+    position: static;
+    transform: translate(0, 0);
+    gap: 40px;
+  }
 }
 .slider-room-reverse {
   display: flex;
@@ -186,9 +179,9 @@
   gap: 16px;
 
   @media screen and (min-width: $tablet) {
-      transform: translate(0, 0);
-      gap: 40px;
-    }
+    transform: translate(0, 0);
+    gap: 40px;
+  }
 }
 .slider__washbasin {
   width: 194px;
@@ -196,12 +189,12 @@
   border-radius: 2px;
 
   @media screen and (min-width: $tablet) {
-      border-radius: 0;
-    }
+    border-radius: 0;
+  }
 
   @media screen and (min-width: $desktop) {
-      width: 254px;
-    }
+    width: 254px;
+  }
 }
 .slider__window {
   width: 194px;
@@ -223,14 +216,14 @@
   margin-bottom: 25px;
 
   @media screen and (min-width: $tablet) {
-      margin-top: 15px;
-      margin-bottom: 45px;
-      margin-left: 330px;
-    }
+    margin-top: 15px;
+    margin-bottom: 45px;
+    margin-left: 330px;
+  }
 
   @media screen and (min-width: $desktop) {
-      margin-left: 450px;
-    }
+    margin-left: 450px;
+  }
 }
 .slider__way__reverse {
   display: flex;
@@ -256,30 +249,30 @@
     margin-bottom: 0px;
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
     transform: translate(-65px, -32px);
-    }
+  }
 
   @media screen and (min-width: $desktop) {
-      width: 460px;
-      height: 574px;
-      transform: translate(-95px, -36px);
-      border-radius: 2px;
-    }
+    width: 460px;
+    height: 574px;
+    transform: translate(-95px, -36px);
+    border-radius: 2px;
+  }
 }
 .room-photo__reverse {
   display: flex;
   justify-content: end;
 
-@media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
   }
 }
 .room-photo__container {
   @media screen and (min-width: $tablet) {
     padding-left: 130px;
-    }
+  }
 
   @media screen and (min-width: $desktop) {
-      padding-left: 185px;
-    }
+    padding-left: 185px;
+  }
 }
 .room-item {
   @media screen and (min-width: $tablet) {
@@ -295,41 +288,39 @@
   margin-left: 80px;
 
   a:first-child {
-      margin-bottom: 16px;
-    }
+    margin-bottom: 16px;
+  }
 
-    @media screen and (min-width: $tablet) {
-      display: flex;
-      flex-direction: column;
-      margin-left: 267px;
-      margin-top: 40px;
-      }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 267px;
+    margin-top: 40px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        margin-left: 327px;
-        margin-top: 70px;
-      }
+  @media screen and (min-width: $desktop) {
+    margin-left: 327px;
+    margin-top: 70px;
+  }
 }
 .room-button__reverse {
   margin-left: 80px;
-  
-    a:first-child {
-      margin-bottom: 16px;
-    }
+
+  a:first-child {
+    margin-bottom: 16px;
+  }
   @media screen and (min-width: $tablet) {
-      display: flex;
-      flex-direction: column;
-      margin-left: 0;
-      margin-top: 40px;
-      padding-right: 290px;
-    }
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 40px;
+    padding-right: 290px;
+  }
 
   @media screen and (min-width: $desktop) {
     position: absolute;
     margin-top: 75px;
     padding-right: 0;
     transform: translate(-371%, 0px);
-    }
+  }
 }
-
-
