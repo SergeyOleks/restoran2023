@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIMIHO</title>
+    <link rel="stylesheet" href="./sass/hotel.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MIMIHO</title>
-  <link rel="stylesheet" href="./sass/hotel.scss" />
-  <script type="module" src="./index.js"></script>
-</head>
+  <body>
+    <include src="./partials/header.html"></include>
 
-<body>
-  <include src="./partials/header.html"></include>
+    <main>
+      <include src="./partials/sections/hero-hotel-section.html"></include>
+      <include
+        src="./partials/sections/hotel-section/room-section.html"
+      ></include>
+    </main>
 
-  <main>
-    <include src="./partials/sections/hero-hotel-section.html"></include>
-    <include src="./partials/sections/hotel-section/room-section.html"></include>
-  </main>
-
-  <include src="./partials/footer.html"></include>
-</body>
-
+    <include src="./partials/footer.html"></include>
+    <div class="backdrop js-backdrop-modal">
+      <include
+        src="./partials/sections/reuse-section/modal-form.html"
+      ></include>
+    </div>
+  </body>
 </html>
