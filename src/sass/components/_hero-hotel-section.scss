@@ -23,11 +23,17 @@
 }
 
 .hero {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1280px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(../images/hero/hero-hotel.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media screen and (max-width: 1023px) {
+      background-position: 30% 0;
+    }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -36,7 +42,7 @@
       url(../images/hero/hero-hotel@2x.jpg);
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $mobile) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/hero/hero-hotel-tablet.jpg);
 
@@ -51,7 +57,7 @@
     }
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $tablet) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(../images/hero/hero-hotel-desktop.jpg);
 
