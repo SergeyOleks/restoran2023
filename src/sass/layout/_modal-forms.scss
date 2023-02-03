@@ -152,3 +152,20 @@
     margin-bottom: 28px;
   }
 }
+.modal1.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.modal2.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.modal3.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+}
