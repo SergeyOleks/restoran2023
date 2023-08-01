@@ -1,21 +1,21 @@
 {
-  "name": "parcel-project-template",
+  "name": "restoran2023",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Ritulina.github.io/parcel-project-template",
+  "homepage": "https://SergeyOleks.github.io/restoran2023",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /restoran2023/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ritulina/parcel-project-template.git"
+    "url": "git+https://github.com/SergeyOleks/restoran2023.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Serhii Oleksiienko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ritulina/parcel-project-template/issues"
+    "url": "https://github.com/SergeyOleks/restoran2023/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0",
